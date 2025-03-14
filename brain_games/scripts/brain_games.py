@@ -5,7 +5,7 @@ from brain_games import cli
 
 def main():
     cli.print_hello()
-    name = cli.welcome_user()
+    name = cli.enter_name()
     print(cli.welcome_user(name))
 
 
