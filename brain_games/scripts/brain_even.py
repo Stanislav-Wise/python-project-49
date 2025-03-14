@@ -18,6 +18,8 @@ def quiz(user_name):
         else:
             print(f"'{answer}'  is wrong answer ;(. Correct answer was '{'no' if answer == 'yes' else 'yes'}'.")
             print(f"Let's try again, {user_name}!")
+            break
+
     print(f"Congratulations, {user_name}!")
 
 
