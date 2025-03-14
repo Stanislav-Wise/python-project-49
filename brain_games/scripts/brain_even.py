@@ -20,6 +20,7 @@ def quiz(user_name):
             print(f"Let's try again, {user_name}!")
     print(f"Congratulations, {user_name}!")
 
+
 def main():
     cli.print_hello()
     name = cli.enter_name()
