@@ -5,7 +5,8 @@ from random import randint
 
 def quiz(user_name):
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    for _ in range(3):
+    correct_answer = 0
+    while correct_answer < 3:
         number = randint(1, 100)
         print(f'Question: {number}')
         answer = input('Your answer: ')
@@ -13,6 +14,7 @@ def quiz(user_name):
             answer = input('Your answer: ')
         if not number % 2 and answer == "yes" or number % 2 and answer == "no":
             print('Correct!')
+            correct_answer += 1
         else:
             print(f"'{answer}'  is wrong answer ;(. Correct answer was '{'no' if answer == 'yes' else 'yes'}'.")
             print(f"Let's try again, {user_name}!")
