@@ -10,8 +10,8 @@ def quiz(user_name):
         number = randint(1, 100)
         print(f'Question: {number}')
         answer = input('Your answer: ')
-        while not answer in ['yes', 'no']:
-            answer = input('Your answer: ')
+        # while not answer in ['yes', 'no']:
+        #     answer = input('Your answer: ')
         if not number % 2 and answer == "yes" or number % 2 and answer == "no":
             print('Correct!')
             correct_answer += 1
